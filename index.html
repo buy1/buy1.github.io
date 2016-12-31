@@ -83,6 +83,12 @@ ul.navigation li a{
 #name{
   padding-left: 8px;
 }
+#sendbutton{
+  padding-left:;
+}
+#sendreset{
+  padding-left: 40px;
+}
 #mediabuttons{
   padding-top: 30px;
   padding-left: 40px;
@@ -131,19 +137,23 @@ li a:hover {
   <div class="col-xs-6"><img src="http://qlip.in/images/panacea1.jpg" placeholder="portfoliopic" height="550"></img></div>
 </div>
 
-<div id="contactme" class="text-center">
+<form id="contactme" class="text-center" action="mailto:baiwenhuang@example.com" method="post" enctype="text/plain">
   <h1><font size="7">>Contact Me</font></h1>
   <div id="name" >Name: <input id="box" type="text" placeholder="" ></input></div>
   <div id="email">Email: <input id="box" type="text" placeholder="" ></input></div>
   <div id="phone">Phone: <input id="box" type="text" placeholder="" ></input></div>
   <div id="message">Message: <textarea name="message" rows="10" cols="30"></textarea></div>
+  <div id="sendreset">
+    <input id="sendbutton" type="submit" value="Send">
+    <input id="resetbutton" type="reset" value="Reset">
+  </div>
 
   <div id="mediabuttons">
   <a href="https://github.com/buy1"><i class="fa fa-github" aria-hidden="true" style="font-size:36px"></i></a>
   <a href="https://twitter.com/buy0ne"><i class="fa fa-twitter" style="font-size:36px"></i></a>
   <a href="https://www.linkedin.com/in/baiwen-huang-549646108"><i class="fa fa-linkedin-square" style="font-size:36px "></i></a>
   </div>
-</div>
+</form>
 
 </body>
 
