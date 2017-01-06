@@ -58,7 +58,29 @@ ul.navigation li a{
   padding-left: 500 px;
   padding-right: 500 px;
 }
-
+#intro{
+  font-size: 30px;
+  padding-top:120px;
+}
+ul.pfp-description{
+  list-style-type: none;
+  position: relative;
+  font-size: 20px;
+  padding-top: 20px;
+  text-decoration: none;
+  padding-left: 17px;
+}
+.portrait-image{
+  height: auto\9;
+  width: auto\9;
+  position:relative;
+  border: solid 1px;
+  border-radius: 50%;
+  border-color: white;
+}
+.main-pic{
+  float: left;
+}
 #about{
   padding-top: 20px;
   padding-left: 500 px;
@@ -66,16 +88,37 @@ ul.navigation li a{
   height: 800px;
   background-color:#d3d3d3;
 }
+.edulist{
+  list-style-type: none;
+  background-color: #d3d3d3;
+  border-color: #d3d3d3;
+}
 #portfolio{
   padding-top: 20px;
   padding-left: 500 px;
   padding-right: 500 px;
   height: 800px;
 }
-img {
-    max-width: 100%;
+.portfolio-pic{
+    max-width: 100px;
+    max-height: 100px;
     height: auto\9;
-    width: auto\9; /* ie8 */
+    width: auto\9; 
+}
+#formulaslug{
+  width:300px;
+  height:100px;
+}
+#numpy{
+  width:160px;
+  height:100px;
+}
+#tflow{
+  max-width: 100px;
+  max-height: 100px;
+}
+.portfolio-font{
+  font-size:20px;
 }
 #contactme{
   padding-top: 10px;
@@ -86,9 +129,6 @@ img {
 }
 #name{
   padding-left: 8px;
-}
-#sendbutton{
-  padding-left:;
 }
 #sendreset{
   padding-left: 40px;
@@ -114,50 +154,96 @@ li a:hover {
     text-shadow: -3px -3px red;
     text-decoration: none;
 }
+
 </style>
 
 <body>
     <ul class="navigation"> 
-      <li><a href="#home"><font color="black" size="5">Home</font> </a></li>
-      <li ><a href="#about" id="aboutnav"> <font color="black" size="5">About</font> </a></li>
-      <li ><a href="#portfolio" id="portfolionav"> <font color="black" size="5">Portfolio</font></a></li>
+      <li><a href="#home"><font color="black" size="5">About</font> </a></li>
+      <li ><a href="#about" id="aboutnav"> <font color="black" size="5">Education</font> </a></li>
+      <li ><a href="#portfolio" id="portfolionav"> <font color="black" size="5">Experience</font></a></li>
       <li style= "float:right"><a href="#contactme" id="contactmenav"> <font color="black" size="5">Contact Me</font> </a></li>
     </ul>
-</body>
-
 <div id="home" class="text-center">
-  <h1><font size="7">>Home</font></h1>
-</div>
-
-<div id="about" class="text-center">
   <h1><font size="7">>About</font></h1>
-  <p>Full-Stack Developer in progress and VR enthusiast. </p>  
-  <h1><font size="12">...</font></h1>
+  <figure class="main-pic">
+  <img class="portrait-image" src="https://avatars3.githubusercontent.com/u/22967251?v=3&u=4518e7c7b3808789dcbb46eae98d77ddfc71ec12&s=400" alt="profile photo">
+  <figcaption>
+    <ul class="pfp-description">
+      <li>Baiwen Huang</li>
+      <li>Computer Science</li>
+      <li>UC Santa Cruz</li>
+    </ul>
+    </figcaption>
+  </figure>
+  <p id="intro">Hi, I am a student currently studying at University of California Santa Cruz,
+   and I am looking for an internship opportunity for the upcoming summer of 2017 where I can be pushed to the limit to learn about computers and how they work.
+  </p>
+  </body>
 </div>
-
+<div id="about" class="text-center">
+  <h1><font size="7">>Education</font></h1> 
+  <ul class="col-xs-6 edulist">
+    <h3>Relevant Coursework</h3>
+    <li>Computer Architecture</li>
+    <li>Data Structures</li>
+    <li>Computer Systems and Assembly</li>
+    <li>Applied Dicrete Mathematics</li>
+    <li>Algorithms and Abstract Data Types</li>
+    <li>Linear Algebra</li>
+  </ul>
+  <ul class="col-xs-6 edulist">
+    <h3>Known Languages&Technologies</h3>
+    <li>Java</li>
+    <li>C</li>
+    <li>Assembly</li>
+    <li>Python</li>
+    <li>Bash</li>
+    <li>HTML/CSS/Javascript</li>
+    <li>Unix</li>
+    <li>Bootstrap</li>
+    <li>Android Studio</li>
+    <li>git</li>
+  </ul>
+</div>
 <div id="portfolio" class="text-center">
-  <h1><font size="7">>Portfolio</font></h1>
-  <div class="col-xs-6"><img src="http://qlip.in/images/webbrandaxis.jpg" placeholder="portfoliopic"></img></div>
-  <div class="col-xs-6"><img src="http://qlip.in/images/panacea1.jpg" placeholder="portfoliopic" height="550"></img></div>
+  <h1><font size="7">>Experience</font></h1>
+  
+  <div class="col-xs-6">
+    <img id="formulaslug" src="https://static1.squarespace.com/static/57c672b6cd0f68b1295705be/t/5828c51bc534a550aaf8de08/1479066908685/FS-01-high-resolution+-+color+corrected.png?format=1500w" placeholder="portfoliopic"></img>
+  <h3>Finance Division</h3>
+  <p class="portfolio-font">
+  Worked on an expense tracking Node.js application for the Finance division of Formula Slug that grossed over $20,000 in funding
+    The app takes user requests from the Slack Channel redirects the user to a form page and then logs the data in G-sheets and automatically fills out a PDF form.
+  <p>
+  </div>
+  <div class="col-xs-6"><img class="portfolio-pic" src="https://support.apple.com/content/dam/edam/applecare/images/en_US/itunes/featured-contetn-itunes-icon_2x.jpg"  placeholder="portfoliopic"></img>
+  <img class="portfolio-pic" src="http://matplotlib.org/_static/logo2.svg" placeholder="portfoliopic"></img>
+  <img id="numpy" src="https://bids.berkeley.edu/sites/default/files/styles/400x225/public/projects/numpy_project_page.jpg?itok=flrdydei" placeholder="portfoliopic"</img>
+<h3>iCheck</h3>
+<p class="portfolio-font">Python 3 program that takes in pList XML files from iTunes and can find duplicate songs and can also plot data about the playlist using matplotlib. The GUI interface is made with Python's default library Tkinter
+</p>
+<img id="tflow" src="https://camo.githubusercontent.com/ee91ac3c9f5ad840ebf70b54284498fe0e6ddb92/68747470733a2f2f7777772e74656e736f72666c6f772e6f72672f696d616765732f74665f6c6f676f5f7472616e73702e706e67" placeholder="portfolio"></img>
+<h3>HandWriting Recognition</h3>
+<h4>coming soon...</h4>
 </div>
 
+</div>
 <form id="contactme" class="text-center" action="mailto:baiwenhuang@gmail.com" method="post" enctype="text/plain">
   <h1><font size="7">>Contact Me</font></h1>
-  <div id="name" >Name: <input id="box" type="text" placeholder="" ></input></div>
-  <div id="email">Email: <input id="box" type="text" placeholder="" ></input></div>
-  <div id="phone">Phone: <input id="box" type="text" placeholder="" ></input></div>
-  <div id="message">Message: <textarea name="message" rows="10" cols="30"></textarea></div>
-  <div id="sendreset">
-    <input id="sendbutton" type="submit" value="Send">
-    <input id="resetbutton" type="reset" value="Reset">
-  </div>
-
-  <div id="mediabuttons">
-  <a href="https://github.com/buy1"><i class="fa fa-github" aria-hidden="true" style="font-size:36px"></i></a>
-  <a href="https://twitter.com/buy0ne"><i class="fa fa-twitter" style="font-size:36px"></i></a>
-  <a href="https://www.linkedin.com/in/baiwen-huang-549646108"><i class="fa fa-linkedin-square" style="font-size:36px "></i></a>
-  </div>
+  <div id="name" >Name: <input id="box" name="Name" type="text" placeholder="" ></input></div>
+  <div id="email">Email: <input id="box" name="Email" type="text" placeholder="" ></input></div>
+  <div id="phone">Phone: <input id="box" name="Phone Number" type="text" placeholder="" ></input></div>
+<div id="message">Message: <textarea name="Message" rows="10" cols="30"></textarea></div>
+<div id="sendreset">
+<input type="submit" value="Send">
+<input type="reset" value="Reset"> 
+</div>
+<div id="mediabuttons">
+  <a href="https://www.google.com/"><i class="fa fa-facebook-official" style="font-size:36px"></i></a>
+  <a href="https://www.google.com/"><i class="fa fa-twitter" style="font-size:36px"></i></a>
+<a href="https://www.google.com"><i class="fa fa-linkedin-square" style="font-size:36px "></i></a>
+</div>
 </form>
-
 </body>
 
