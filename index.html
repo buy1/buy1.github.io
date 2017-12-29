@@ -1,244 +1,668 @@
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
 <head>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
-<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<title>Baiwen Huang</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="C-Resume a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<!-- css -->
+<!-- font-awesome icons -->
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<!-- //font-awesome icons -->
+<link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all" />
+<!-- Default-JavaScript-File -->
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- //Default-JavaScript-File -->
 
 </head>
-
-<script type="text/javascript">
- $(document).ready(function() {
-    var $page = jQuery.url.attr("file");
-    $('ul.navigation li a').each(function(){
-        var $href = $(this).attr('href');
-        if ( ($href == $page) || ($href == '') ) {
-            $(this).addClass('active');
-        } else {
-            $(this).removeClass('active');
-        }
-  });
-});
-</script>
-
-<style>
-body{
-  background-color: #0000;
-  margin: 0;
-  font-family: 'Playfair Display', serif;
-  font-family: 'Courier New', Courier;
-}
-ul.navigation{
-  top: 0;
-  width: 100%;
-  list-style-type: none;
-  margin: 0;
-  padding:0;
-  overflow: hidden;
-  background-color: transparent;
-  position: fixed;
-  z-index: 40;
-}
-ul.navigation li{
-  float: left;
-}
-ul.navigation li a{
-  font-color:black;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-#home{
-  padding:20px;
-  margin-top:30px;
-  height:800px;
-  padding-left: 500 px;
-  padding-right: 500 px;
-}
-#intro{
-  font-size: 30px;
-  padding-top:120px;
-}
-ul.pfp-description{
-  list-style-type: none;
-  position: relative;
-  font-size: 20px;
-  padding-top: 20px;
-  text-decoration: none;
-  padding-left: 17px;
-}
-.portrait-image{
-  height: auto\9;
-  width: auto\9;
-  position:relative;
-  border: solid 1px;
-  border-radius: 50%;
-  border-color: white;
-}
-.main-pic{
-  float: left;
-}
-#about{
-  padding-top: 20px;
-  padding-left: 500 px;
-  padding-right: 500 px;
-  height: 800px;
-  background-color:#d3d3d3;
-}
-.edulist{
-  list-style-type: none;
-  background-color: #d3d3d3;
-  border-color: #d3d3d3;
-}
-#portfolio{
-  padding-top: 20px;
-  padding-left: 500 px;
-  padding-right: 500 px;
-  height: 800px;
-}
-.portfolio-pic{
-    max-width: 100px;
-    max-height: 100px;
-    height: auto\9;
-    width: auto\9; 
-}
-#formulaslug{
-  width:300px;
-  height:100px;
-}
-#numpy{
-  width:160px;
-  height:100px;
-}
-#tflow{
-  max-width: 100px;
-  max-height: 100px;
-}
-.portfolio-font{
-  font-size:20px;
-}
-#contactme{
-  padding-top: 10px;
-  padding-left: 500 px;
-  padding-right: 500 px;
-  height: 800px;
-  background-color:#d3d3d3;
-}
-#name{
-  padding-left: 8px;
-}
-#sendreset{
-  padding-left: 40px;
-}
-#mediabuttons{
-  padding-top: 30px;
-  padding-left: 40px;
-}
-h1{
-  padding-bottom: 40px;
-}
-
-#box{
-  margin: 0 auto;
-  text-align: left;
-}
-.active{
-    text-shadow: -3px -3px red;
-    text-decoration: none;
-}
-
-li a:hover {
-    text-shadow: -3px -3px red;
-    text-decoration: none;
-}
-
-</style>
-
 <body>
-    <ul class="navigation"> 
-      <li><a href="#home"><font color="black" size="5">About</font> </a></li>
-      <li ><a href="#about" id="aboutnav"> <font color="black" size="5">Education</font> </a></li>
-      <li ><a href="#portfolio" id="portfolionav"> <font color="black" size="5">Experience</font></a></li>
-      <li style= "float:right"><a href="#contactme" id="contactmenav"> <font color="black" size="5">Contact Me</font> </a></li>
-    </ul>
-<div id="home" class="text-center">
-  <h1><font size="7">>About</font></h1>
-  <figure class="main-pic">
-  <img class="portrait-image" src="https://avatars3.githubusercontent.com/u/22967251?v=3&u=4518e7c7b3808789dcbb46eae98d77ddfc71ec12&s=400" alt="profile photo">
-  <figcaption>
-    <ul class="pfp-description">
-      <li>Baiwen Huang</li>
-      <li>Computer Science</li>
-      <li>UC Santa Cruz</li>
-    </ul>
-    </figcaption>
-  </figure>
-  <p id="intro">I am a student currently studying at University of California Santa Cruz,
-   and I am looking for an internship opportunity for the upcoming summer of 2017 where I can be pushed to the limit to learn about computers and how they work.
-  </p>
-  </body>
-</div>
-<div id="about" class="text-center">
-  <h1><font size="7">>Education</font></h1> 
-  <ul class="col-xs-6 edulist">
-    <h3>Relevant Coursework</h3>
-    <li>Computer Architecture</li>
-    <li>Data Structures</li>
-    <li>Computer Systems and Assembly</li>
-    <li>Applied Dicrete Mathematics</li>
-    <li>Algorithms and Abstract Data Types</li>
-    <li>Linear Algebra</li>
-  </ul>
-  <ul class="col-xs-6 edulist">
-    <h3>Known Languages&Technologies</h3>
-    <li>Java</li>
-    <li>C</li>
-    <li>Assembly</li>
-    <li>Python</li>
-    <li>Bash</li>
-    <li>HTML/CSS/Javascript</li>
-    <li>Unix</li>
-    <li>Bootstrap</li>
-    <li>Android Studio</li>
-    <li>git</li>
-  </ul>
-</div>
-<div id="portfolio" class="text-center">
-  <h1><font size="7">>Experience</font></h1>
-  
-  <div class="col-xs-6">
-    <img id="formulaslug" src="https://static1.squarespace.com/static/57c672b6cd0f68b1295705be/t/5828c51bc534a550aaf8de08/1479066908685/FS-01-high-resolution+-+color+corrected.png?format=1500w" placeholder="portfoliopic"></img>
-  <h3>Finance Division</h3>
-  <p class="portfolio-font">
-  Worked on an expense tracking Node.js application for the Finance division of Formula Slug that grossed over $20,000 in funding.
-    The app takes user requests from the Slack Channel redirects the user to a form page and then logs the data in G-sheets and automatically fills out a PDF form.
-  <p>
-  </div>
-  <div class="col-xs-6"><img class="portfolio-pic" src="https://support.apple.com/content/dam/edam/applecare/images/en_US/itunes/featured-contetn-itunes-icon_2x.jpg"  placeholder="portfoliopic"></img>
-  <img class="portfolio-pic" src="http://matplotlib.org/_static/logo2.svg" placeholder="portfoliopic"></img>
-  <img id="numpy" src="https://bids.berkeley.edu/sites/default/files/styles/400x225/public/projects/numpy_project_page.jpg?itok=flrdydei" placeholder="portfoliopic"</img>
-<h3>iCheck</h3>
-<p class="portfolio-font">Python 3 program that takes in pList XML files from iTunes and can find duplicate songs and can also plot data about the playlist using matplotlib. The GUI interface is made with Python's default library Tkinter
-</p>
-<img id="tflow" src="https://camo.githubusercontent.com/ee91ac3c9f5ad840ebf70b54284498fe0e6ddb92/68747470733a2f2f7777772e74656e736f72666c6f772e6f72672f696d616765732f74665f6c6f676f5f7472616e73702e706e67" placeholder="portfolio"></img>
-<h4>coming soon...</h4>
-</div>
+<!-- banner -->
+	<div class="w3-banner-top">
+	<div class="agileinfo-dot">
+			<div class="w3layouts_menu">
+				<nav class="cd-stretchy-nav edit-content">
+					<a class="cd-nav-trigger" href="#0"> Menu <span aria-hidden="true"></span> </a>
+					<ul>
+						<li><a href="#home" class="scroll"><span>Home</span></a></li>
+						<li><a href="#about" class="scroll"><span>About</span></a></li>
+						<li><a href="#experiences" class="scroll"><span>Experiences</span></a></li>
+						<li><a href="#skills" class="scroll"><span>Skills</span></a></li> 
+						<li><a href="#projects" class="scroll"><span>Projects</span></a></li>
+						<li><a href="#contact" class="scroll"><span>Contact</span></a></li>
+					</ul> 
+					<span aria-hidden="true" class="stretchy-nav-bg"></span>
+				</nav> 
+			</div>
 
+		<div class="w3-banner-grids">
+			<div class="col-md-6 w3-banner-grid-left">
+				<div class="w3-banner-img">
+					<img src="images/pfp.png" alt="img">
+					<h3 class="test">Baiwen Huang</h3>
+					<p class="test" >Machine Learning Enthusiast</p>
+				</div>
+			</div>
+			<div class="col-md-6 w3-banner-grid-right">
+			<div class="w3-banner-text">
+				<h3>Links</h3>
+				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dignissim velit sed nibh placerat, non aliquam purus pretium. Donec at justo dignissim, maximus elit et, vestibulum mi.</p> -->
+			</div>
+				<div class=" w3-right-addres-1">
+				<ul class="address">
+								<!-- <li>
+									<ul class="agileits-address-text ">
+										<li class="agile-it-adress-left"><b>D.O.B</b></li>
+										<li><span>:</span>21-08-1987</li>
+									</ul>
+								</li> -->
+								<li>
+									<ul class="agileits-address-text">
+										<li class="agile-it-adress-left"><b>GITHUB</b></li>
+										<li><span></span><a href="https://github.com/buy1"> github.com/buy1</a></li>
+									</ul>
+								</li>
+								<!-- <li>
+									<ul class="agileits-address-text">
+										<li class="agile-it-adress-left"><b>LOCATIONS</b></li>
+										<li><span></span>Irvine, California</li>
+										
+									</ul>
+									<ul class="agileits-address-text">
+										<li class="agile-it-adress-left"><b></b></li>
+										<li><span></span>Santa Cruz, California</li>
+										
+									</ul>
+								</li> -->
+								<li>
+									<ul class="agileits-address-text">
+										<li class="agile-it-adress-left"><b>LINKEDIN</b></li>
+										<li><span></span><a href="https://www.linkedin.com/in/baiwenhuang/"> linkedin.com/in/baiwenhuang/</a></li>
+									</ul>
+								</li>
+								<!-- <li>
+									<ul class="agileits-address-text">
+										<li class="agile-it-adress-left"><b>WEBSITE</b></li>
+										<li><span>:</span><a href="#">www.myresume.com</a></li>
+									</ul>
+								</li> -->
+							</ul> 
+
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		</div>
+		<div class="thim-click-to-bottom">
+				<a href="#experiences" class="scroll">
+					<i class="fa  fa-chevron-down"></i>
+				</a>
+			</div>
+
+	</div>
+<!-- banner -->
+<!-- /about -->
+
+<!-- <div class="w3-about" id="about">
+	<div class="container">
+		<div class="w3-about-head">
+			<h3>About me</h3>
+		</div>
+		<div class="w3-about-grids">
+		<div class=" w3-about-grids1">
+				<div class="col-md-6 w3-about-grid-left1">
+					<img src="images/ab5.jpg" alt="img1">
+		
+				</div>
+				<div class="col-md-6 w3-about-grid-right1">
+					<h3>Aliquam euismod at turpis eu egestas</h3>
+					<p> Nullam pulvinar nunc eget tortor elementum, sed vehicula massa vestibulum. Aenean gravida arcu viverra nisl euismod laoreet. Fusce accumsan vel arcu at tincidunt. Nulla non nulla ultrices, pharetra orci in, varius nunc.</p>
+					<h5>Lorem ipsum dolor sit amet, consectetur adipisci ask</h5>
+					<div class= "w3-about-grid-small-border">
+					<div class="col-md-4 w3-about-grid-small">
+						<h3 class="w3-head-project">20</h3>
+						<h5>web projects</h5>
+					</div>
+					<div class="col-md-4 w3-about-grid-small">
+					<h3 class="w3-head-project">30</h3>
+						<h5>php projects</h5>
+					</div>
+					<div class="col-md-4 w3-about-grid-small">
+						<h3 class="w3-head-project">50</h3>
+						<h5>java projects</h5>
+						<div class="clearfix"></div>
+					</div>
+				<div class="clearfix"></div>
+				</div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="w3-about-grids2">
+				<div class="col-md-6 w3-about-grid-left2">
+					<h3>Pellentesque sit amet ex at nisl posuere</h3>
+					<p> Nullam pulvinar nunc eget tortor elementum, sed vehicula massa vestibulum. Aenean gravida arcu viverra nisl euismod laoreet. Fusce accumsan vel arcu at tincidunt. Nulla non nulla ultrices, pharetra orci in, varius nunc.</p>
+					<h4><a href="#">Readmore</a></h4>
+		
+				</div>
+				<div class="col-md-6 w3-about-grid-right2">
+				<img src="images/ab7.jpg" alt="img1">
+		
+				</div>
+				<div class="clearfix"></div>
+				</div>
+		</div>
+	</div>
+</div> -->
 </div>
-<form id="contactme" class="text-center" action="mailto:baiwenhuang@gmail.com" method="post" enctype="text/plain">
-  <h1><font size="7">>Contact Me</font></h1>
-  <div id="name" >Name: <input id="box" name="Name" type="text" placeholder="" ></input></div>
-  <div id="email">Email: <input id="box" name="Email" type="text" placeholder="" ></input></div>
-  <div id="phone">Phone: <input id="box" name="Phone Number" type="text" placeholder="" ></input></div>
-<div id="message">Message: <textarea name="Message" rows="10" cols="30"></textarea></div>
-<div id="sendreset">
-<input type="submit" value="Send">
-<input type="reset" value="Reset"> 
+<!-- //about  -->
+<!--/ education -->
+	<div class="w3-edu-top" id="experiences">
+	<div class="container">
+		<div class="w3-edu-grids">
+			<div class="col-md-6 w3-edu-grid-left">
+				<div class="w3-edu-grid-header">
+				<h3>Experiences</h3>
+				</div>
+				<div class="col-md-4 w3-edu-info1">
+					<h3>2017</h3>
+					<h4>front end web developer</h4>
+			</div>
+			<div class="col-md-6 w3-edu-info2">
+				<h3>SproutsLab UCSC</h3>
+					<h4><i class="fa fa-users" aria-hidden="true"></i><span>Scrum Master</span></h4>
+					<p>Developed a Mesh Network Visualization tool from the ground up and managed team </p>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-4 w3-edu-info1">
+			<h3>2017</h3>
+					<h4>Group and Individual Tutor</h4>
+					
+			</div>
+			<div class="col-md-6 w3-edu-info2">
+				<h3>Jack Baskin Engineering</h3>
+					<h4><i class="fa fa-code" aria-hidden="true"></i><span>Tutor</span></h4>
+					<p>Group and Individual Tutor for Computer Systems and Assembly Language</p>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-4 w3-edu-info1">
+			<h3>2017</h3>
+					<h4>Undergraduate Lab Assistant</h4>
+					
+			</div>
+			<div class="col-md-6 w3-edu-info2">
+				<h3>UCSC METX Lab</h3>
+					<h4><i class="fa fa-laptop" aria-hidden="true"></i><span>Lab Assistant</span></h4>
+					<p>Modeling unsupervised neural networks to find the mutational patterns in HIV drug resistance evolution using python and R</p>
+			
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-4 w3-edu-info1">
+			<h3>2017</h3>
+					<h4>Machine Learning Intern</h4>
+					
+			</div>
+			<div class="col-md-6 w3-edu-info2">
+				<h3>Turing Robot</h3>
+					<h4><i class="fa fa-laptop" aria-hidden="true"></i><span>NLP Intern</span></h4>
+					<p>Developed child oriented chatbot and data mined for data</p>
+			
+			</div>	
+			</div>
+			<div class="col-md-6 w3-edu-grid-right">
+			<div class="w3-edu-grid-header">
+			<h3>Education</h3>
+			</div>
+				<div class="col-md-3 w3-edu-info-right1">
+					<h3>2017</h3>
+			</div>
+			<div class="col-md-9 w3-edu-info-right2">
+				<h3>University of California, Santa Cruz</h3>
+					<h4>Computer Science B.S.</h4>
+					<p>September 2015 - December 2018</p>
+			</div>
+			<!-- <div class="clearfix"></div>
+			<div class="col-md-3 w3-edu-info-right1">
+				<h3>2006</h3>
+			</div>
+			<div class="col-md-9 w3-edu-info-right2">
+				<h3>Board of intermediate</h3>
+					<h4>mathametics </h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt a purus et vulputate Donec tincidunt a purus et vulputate</p>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-3 w3-edu-info-right1">
+			<h3>2004</h3>
+			</div>
+			<div class="col-md-9 w3-edu-info-right2">
+				<h3>international school</h3>
+					<h4>iit certified</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt a purus et vulputate Donec tincidunt a purus et vulputate</p>
+			
+			</div>
+			<div class="clearfix"></div> -->		
+		</div>
+		<div class="clearfix"></div>	
+	</div>
+	</div>
+	</div>
+<!-- //education -->
+<!-- skills -->
+<div class="skills" id="skills">
+	<div class="container">
+	<div class="title-w3ls">
+		<h4>My Skills</h4>
+		</div>
+		<div class="skills-bar">
+		<div class="col-md-6 w3-agile-skills-grid">
+			<section class='bar'>
+				<section class='wrap'>
+					<div class='wrap_right'>
+					  <div class='bar_group'>
+						<div class='bar_group__bar thin' label='Python' show_values='true' tooltip='true' value='80'></div>
+						<div class='bar_group__bar thin' label='Java' show_values='true' tooltip='true' value='80'></div>
+						<div class='bar_group__bar thin' label='Javascript' show_values='true' tooltip='true' value='60'></div>
+						<div class='bar_group__bar thin' label='C' show_values='true' tooltip='true' value='40'></div>
+						<div class='bar_group__bar thin' label='HTML/CSS' show_values='true' tooltip='true' value='50'></div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</section>
+			</section>
+		</div>
+		<div class="col-md-6 w3-agile-skills-grid">
+			<section class='bar'>
+				<section class='wrap'>
+					<div class='wrap_right'>
+					  <div class='bar_group'>
+						<div class='bar_group__bar thin' label='Tensorflow' show_values='true' tooltip='true' value='70'></div>
+						<div class='bar_group__bar thin' label='RegEx' show_values='true' tooltip='true' value='90'></div>
+						<div class='bar_group__bar thin' label='Git' show_values='true' tooltip='true' value='70'></div>
+						<div class='bar_group__bar thin' label='Android Studio' show_values='true' tooltip='true' value='60'></div>
+						<div class='bar_group__bar thin' label='Mobile Vision' show_values='true' tooltip='true' value='80'></div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</section>
+			</section>
+		</div>
+		<div class="clearfix"></div>
+		</div>
+	</div>
 </div>
-  <div id="mediabuttons">   <a href="https://github.com/buy1"><i class="fa fa-github" aria-hidden="true" style="font-size:36px"></i></a>   <a href="https://twitter.com/buy0ne"><i class="fa fa-twitter" style="font-size:36px"></i></a>   <a href="https://www.linkedin.com/in/baiwen-huang-549646108"><i class="fa fa-linkedin-square" style="font-size:36px "></i></a>   </div>
-</form>
+<!-- //skills -->
+
+<!-- main-content -->
+	<div class="main-content">
+		<!-- gallery -->
+	<div class="gallery" id="projects">
+		<div class="w3-gallery-head">
+			<h3>My projects</h3>
+		</div>
+	<div class="container">
+		<div class="gallery_gds">
+			<ul class="simplefilter ">
+                <li class="active" data-filter="all">All</li>
+                <li data-filter="1">Python</li>
+                <li data-filter="2">Java</li>
+                <li data-filter="3">Web development</li>
+                <li data-filters="4">Mobile Development</li>
+            </ul>   
+            <div class="filtr-container " style="padding: 0px; position: relative; height: 858px;">
+				<div class="col-md-4 col-ms-6 jm-item first filtr-item" data-category="2, 4" data-sort="Busy streets" style="opacity: 1; transform: scale(1) translate3d(0px, 0px, 0px); backface-visibility: hidden; perspective: 1000px; transform-style: preserve-3d; position: absolute; transition: all 0.5s ease-out 0ms;">
+					<div class="jm-item-wrapper">
+						<div class="jm-item-image">
+							<img src="images/g1.jpg" alt="property" />
+							<span class="jm-item-overlay"> </span>
+							<div class="jm-item-button"><a href="#"  data-toggle="modal" data-target="#myModal1">View Details</a></div>
+						</div>	
+						
+					</div>
+				</div>
+				<div class="col-md-4 col-ms-6 jm-item first filtr-item" data-category="1, 3" data-sort="Luminous night" style="opacity: 1; transform: scale(1) translate3d(380px, 0px, 0px); backface-visibility: hidden; perspective: 1000px; transform-style: preserve-3d; position: absolute; transition: all 0.5s ease-out 0ms;">
+					<div class="jm-item-wrapper">
+						<div class="jm-item-image">
+							<img src="images/g2.jpg" alt="property" />
+							<span class="jm-item-overlay"> </span>
+							<div class="jm-item-button"><a href="#"  data-toggle="modal" data-target="#myModal2">View Details</a></div>
+						</div>	
+						
+					</div>
+				</div>
+				<!-- <div class="col-md-4 col-ms-6 jm-item first filtr-item" data-category="1, 4" data-sort="City wonders" style="opacity: 1; transform: scale(1) translate3d(760px, 0px, 0px); backface-visibility: hidden; perspective: 1000px; transform-style: preserve-3d; position: absolute; transition: all 0.5s ease-out 0ms;">
+					<div class="jm-item-wrapper">
+						<div class="jm-item-image">
+							<img src="images/g31.jpg" alt="property" />
+							<span class="jm-item-overlay"> </span>
+							<div class="jm-item-button"><a href="#"  data-toggle="modal" data-target="#myModal3">View Details</a></div>
+						</div>	
+						
+					</div>
+				</div>
+				<div class="col-md-4 col-ms-6 jm-item first filtr-item" data-category="1, 3" data-sort="In production" style="opacity: 1; transform: scale(1) translate3d(0px, 286px, 0px); backface-visibility: hidden; perspective: 1000px; transform-style: preserve-3d; position: absolute; transition: all 0.5s ease-out 0ms;">
+					<div class="jm-item-wrapper">
+						<div class="jm-item-image">
+							<img src="images/g4.jpg" alt="property" />
+							<span class="jm-item-overlay"> </span>
+							<div class="jm-item-button"><a href="#"  data-toggle="modal" data-target="#myModal4">View Details</a></div>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-4 col-ms-6 jm-item first filtr-item" data-category="3, 4" data-sort="Industrial site" style="opacity: 1; transform: scale(1) translate3d(380px, 286px, 0px); backface-visibility: hidden; perspective: 1000px; transform-style: preserve-3d; position: absolute; transition: all 0.5s ease-out 0ms;">
+					<div class="jm-item-wrapper">
+						<div class="jm-item-image">
+							<img src="images/g5.jpg" alt="property" />
+							<span class="jm-item-overlay"> </span>
+							<div class="jm-item-button"><a href="#"  data-toggle="modal" data-target="#myModal5">View Details</a></div>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-4 col-ms-6 jm-item first filtr-item" data-category="3, 4" data-sort="Industrial site" style="opacity: 1; transform: scale(1) translate3d(380px, 286px, 0px); backface-visibility: hidden; perspective: 1000px; transform-style: preserve-3d; position: absolute; transition: all 0.5s ease-out 0ms;">
+					<div class="jm-item-wrapper">
+						<div class="jm-item-image">
+							<img src="images/g6.jpg" alt="property" />
+							<span class="jm-item-overlay"> </span>
+							<div class="jm-item-button"><a href="#"  data-toggle="modal" data-target="#myModal6">View Details</a></div>
+						</div>
+						
+					</div>
+				</div> -->
+
+               <div class="clearfix"> </div>
+            </div>
+		</div>
+	</div>	
+	</div>
+	<!--//gallery-->
+	</div>
+<!-- //main-content -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" >
+				<div class="modal-dialog">
+							<!-- Modal content-->
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class="w3ls-property-images w3-pop1-img">
+							</div>
+					
+						<div class="ins-details">
+							<div class="ins-name">
+								<h3>voluptatem accusantium doloremque</h3>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+								
+							</div>
+							
+						</div>
+						<div class="clearfix"></div>			
+			     </div>
+	</div>
+					 
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" >
+				<div class="modal-dialog">
+							<!-- Modal content-->
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class="w3ls-property-images">
+								<img src="images/gal11.jpg" alt="image">
+							</div>
+					
+						<div class="ins-details">
+							<div class="ins-name">
+								<h2>Divvy</h2>
+								<h3>Bill Splitting Android App</h3>
+								<p>Receipt Scanning App that allows users to easily split Bills with the tap of a button</p>
+								
+							</div>
+							
+						</div>
+						<div class="clearfix"></div>			
+			     </div>
+	</div>
+					 
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" >
+				<div class="modal-dialog">
+							<!-- Modal content-->
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class=" w3ls-property-images w3-pop1-img2">
+							<img src="images/gal22.jpg" alt="image">
+							</div>
+					
+						<div class=" ins-details">
+							<div class="ins-name">
+								<h3>Crypto Market Analyzer</h3>
+								
+								<p>Developed from the ground up and uses IBM Watson to analyze social media sites and predict an impending boom of a cryptocurrency</p>
+								
+							</div>
+							
+						</div>
+						<div class="clearfix"></div>			
+			     </div>
+	</div>
+					 
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" >
+				<div class="modal-dialog">
+							<!-- Modal content-->
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class="w3ls-property-images w3-pop1-img3">
+							<img src="images/gal33.jpg" alt="image">
+							</div>
+					
+						<div class="ins-details">
+							<div class="ins-name">
+								<h3>voluptatem accusantium doloremque</h3>
+								
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+								
+							</div>
+							
+						</div>
+						<div class="clearfix"></div>			
+			     </div>
+	</div>
+					 
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" >
+				<div class="modal-dialog">
+							<!-- Modal content-->
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class=" w3ls-property-images w3-pop1-img4">
+							<img src="images/gal44.jpg" alt="image">
+							</div>
+					
+						<div class=" ins-details">
+							<div class="ins-name">
+								<h3>voluptatem accusantium doloremque</h3>
+								
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+								
+							</div>
+							
+						</div>
+						<div class="clearfix"></div>			
+			     </div>
+	</div>
+					 
+<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" >
+				<div class="modal-dialog">
+							<!-- Modal content-->
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class=" w3ls-property-images w3-pop1-img5">
+							<img src="images/gal66.jpg" alt="image">
+							</div>
+					
+						<div class=" ins-details">
+							<div class="ins-name">
+								<h3>voluptatem accusantium doloremque</h3>
+								
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+								
+							</div>
+							
+						</div>
+						<div class="clearfix"></div>			
+			     </div>
+	</div>
+					 
+<div class="modal fade" id="myModal6" tabindex="-1" role="dialog" >
+				<div class="modal-dialog">
+							<!-- Modal content-->
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+							<div class=" w3ls-property-images w3-pop1-img6">
+								<img src="images/gal61.jpg" alt="image">
+							</div>
+					
+						<div class=" ins-details">
+							<div class="ins-name">
+								<h3>voluptatem accusantium doloremque</h3>
+
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+								
+							</div>
+							
+						</div>
+						<div class="clearfix"></div>			
+			     </div>
+	</div>
+					 
+			
+ <script src="js/jquery.filterizr.js"></script>
+    
+    <!-- Kick off Filterizr -->
+    <script type="text/javascript">
+        $(function() {
+            //Initialize filterizr with default options
+            $('.filtr-container').filterizr();
+        });
+    </script>
+
+<!-- contact -->
+	<!--  <div class="contact" id="contact">
+	<div class="container">
+		<div class="w3ls-heading">
+			<h3>Contact me</h3>
+		</div>
+			<div class="contact-w3ls">
+				<form action="mailto:EMAILADDRESS" method="post">
+					<div class="col-md-7 col-sm-7 contact-left agileits-w3layouts">
+						<input type="text" name="First Name" placeholder="Name" required="">
+						<input type="email"  class="email" name="Email" placeholder="Email" required="">
+						<input type="text" name="Number" placeholder="Mobile Number" required="">
+						<input type="text" class="email" name="Last Name" placeholder="Last Name" required="">
+					</div> 
+					<div class="col-md-5 col-sm-5 contact-right agileits-w3layouts">
+						<textarea name="Message" placeholder="Message" required=""></textarea>
+						<input type="submit" value="Submit">
+					</div>
+					<div class="clearfix"> </div> 
+				</form>
+			</div>  
+
+	</div>
+</div> -->
+<!-- //contact -->
+<!-- footer -->
+	<div class="w3l_footer">
+		<div class="container">
+			
+			<div class="w3ls_footer_grids">
+				
+				<div class="w3ls_footer_grid">
+					<div class="col-md-4 w3ls_footer_grid_left">
+						<div class="w3ls_footer_grid_leftl">
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+						</div>
+						<div class="w3ls_footer_grid_leftr">
+							<h4>Location</h4>
+							<p>707 Washington St Santa Cruz, CA, USA</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-4 w3ls_footer_grid_left">
+						<div class="w3ls_footer_grid_leftl">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</div>
+						<div class="w3ls_footer_grid_leftr">
+							<h4>Email</h4>
+							<a href="mailto:info@example.com">baiwenhuang@gmail.com</a>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-4 w3ls_footer_grid_left">
+						<div class="w3ls_footer_grid_leftl">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+						</div>
+						<div class="w3ls_footer_grid_leftr">
+							<h4>Call Me</h4>
+							<p>(+949) 562 8968</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<<!-- div class="w3l_footer_pos">
+			<p>© 2017 C-Resume. All Rights Reserved | Design by <a href="https://w3layouts.com/">W3layouts</a></p>
+		</div> -->
+	</div>
+<!-- //footer -->
+<script src="js/bars.js"></script>
+<!-- start-smoth-scrolling -->
+<!-- <script src="js/SmoothScroll.min.js"></script> -->
+<!-- text-effect -->
+		<script type="text/javascript" src="js/jquery.transit.js"></script> 
+		<script type="text/javascript" src="js/jquery.textFx.js"></script> 
+		<script type="text/javascript">
+			$(document).ready(function() {
+					$('.test').textFx({
+						type: 'fadeIn',
+						iChar: 100,
+						iAnim: 1000
+					});
+			});
+		</script>
+<!-- //text-effect -->
+<!-- menu-js --> 	
+	<script src="js/modernizr.js"></script>	
+	<script src="js/menu.js"></script>
+<!-- //menu-js --> 	
+
+
+<script type="text/javascript" src="js/move-top.js"></script>
+
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+
+
 </body>
-
+</html>
